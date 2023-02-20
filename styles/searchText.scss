@@ -1,0 +1,43 @@
+$bg-color: rgb(224, 119, 49);
+
+.container{
+    &:hover{
+        .input{
+            height: 35px;
+        }
+    }
+    .input {
+        .innerInput {
+            border: none;
+            outline: none;
+            width: 290px;
+            height: inherit;
+        }
+        input{
+            padding-left: 10px;
+        }
+        display: inline-flex;
+        height: 0;
+        transition: all .2s;
+    }
+    .search{
+        height: inherit;
+        .searchIcon {
+            height: inherit;;
+            width: 40px;
+            background: $bg-color;
+            align-items: center;
+            color: rgb(255, 255, 255); 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                height: inherit;
+            }
+        }
+        a{
+            height: inherit;
+        }
+    }
+}
+
